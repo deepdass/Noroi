@@ -4,6 +4,10 @@ extends PanelContainer
 const inv_item_scene : PackedScene = preload("res://Maps/scenes/inventory_item.tscn")
 @onready var item_grid: GridContainer = $item_grid
 
+func _ready() -> void:
+	for i in items:
+		add_item(i)
+
 func add_item(item_data : ItemData):
 	var inventory_item = inv_item_scene.instantiate()
 	inventory_item.data = item_data

@@ -2,6 +2,15 @@
 
 [ext_resource type="Script" uid="uid://voqckq3dn876" path="res://Scripts/managers/inventory.gd" id="1_cfbfw"]
 [ext_resource type="Script" uid="uid://bj0p5e7ad3jqs" path="res://Scripts/inventory_grid.gd" id="1_oi41m"]
+[ext_resource type="Script" uid="uid://cenxq3e1iieev" path="res://resources/item_data.gd" id="2_060rc"]
+[ext_resource type="Texture2D" uid="uid://tf876c3k6msr" path="res://assets/3D/pistol/pistol_inv.png" id="3_latmu"]
+
+[sub_resource type="Resource" id="Resource_latmu"]
+script = ExtResource("2_060rc")
+name = "hello"
+texture = ExtResource("3_latmu")
+dimentions = Vector2i(2, 2)
+metadata/_custom_type_script = "uid://cenxq3e1iieev"
 
 [node name="Control" type="Control" unique_id=1407575900]
 layout_mode = 3
@@ -12,6 +21,7 @@ offset_bottom = 40.0
 [node name="inventory" type="PanelContainer" parent="." unique_id=579227660]
 layout_mode = 0
 script = ExtResource("1_cfbfw")
+items = Array[ExtResource("2_060rc")]([SubResource("Resource_latmu")])
 
 [node name="item_grid" type="GridContainer" parent="inventory" unique_id=1745661209]
 layout_mode = 2
