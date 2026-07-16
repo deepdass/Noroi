@@ -1,4 +1,4 @@
-# RetroHorror
+# Noroi
 ## Idea 
 A retro horror game with unique visuals similar to ps1 games and simulating other limitations they had
 <br>and experimented with a different prespective and controls inspired by original Resident Evil and Silent Hill games
